@@ -21,13 +21,16 @@ export function TherapyCommunity() {
               Join small, intimate group chats centered around specific feelings or topics. It's a safe space to share without the noise of social media.
             </p>
 
-            <motion.button
+            <motion.a
+              href="https://app.coffiecalm.com"
+              target="_blank"
+              rel="noopener noreferrer"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className="px-8 py-4 bg-gradient-to-r from-purple-600 to-sky-600 text-white rounded-full shadow-lg hover:shadow-xl transition-shadow"
+              className="px-8 py-4 bg-gradient-to-r from-purple-600 to-sky-600 text-white rounded-full shadow-lg hover:shadow-xl transition-shadow inline-block"
             >
               Get Started
-            </motion.button>
+            </motion.a>
           </motion.div>
 
           <motion.div

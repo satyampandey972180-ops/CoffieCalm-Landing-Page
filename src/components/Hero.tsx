@@ -34,14 +34,17 @@ export function Hero() {
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 mb-8">
-              <motion.button
+              <motion.a
+                href="https://app.coffiecalm.com"
+                target="_blank"
+                rel="noopener noreferrer"
                 whileHover={{ scale: 1.05, boxShadow: '0 0 30px rgba(147, 51, 234, 0.5)' }}
                 whileTap={{ scale: 0.95 }}
                 className="px-8 py-4 bg-gradient-to-r from-purple-600 to-sky-600 text-white rounded-full flex items-center justify-center gap-2 shadow-lg hover:shadow-xl transition-shadow"
               >
                 Join the Café
                 <ArrowRight className="w-5 h-5" />
-              </motion.button>
+              </motion.a>
 
               <motion.a
                 href="#HowItWorks"

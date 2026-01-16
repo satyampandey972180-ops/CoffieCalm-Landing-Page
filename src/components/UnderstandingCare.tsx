@@ -21,13 +21,16 @@ export function UnderstandingCare() {
               Sometimes you don't need a medical diagnosis; you just need to be heard. Our community is built on the simple power of human connection.
             </p>
 
-            <motion.button
+            <motion.a
+              href="https://app.coffiecalm.com"
+              target="_blank"
+              rel="noopener noreferrer"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className="px-8 py-4 bg-gradient-to-r from-purple-600 to-sky-600 text-white rounded-full shadow-lg hover:shadow-xl transition-shadow"
+              className="px-8 py-4 bg-gradient-to-r from-purple-600 to-sky-600 text-white rounded-full shadow-lg hover:shadow-xl transition-shadow inline-block"
             >
               Meet the Community
-            </motion.button>
+            </motion.a>
           </motion.div>
 
           <motion.div

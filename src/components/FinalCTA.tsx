@@ -29,14 +29,17 @@ export function FinalCTA() {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
-            <motion.button
+            <motion.a
+              href="https://app.coffiecalm.com"
+              target="_blank"
+              rel="noopener noreferrer"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               className="px-10 py-4 bg-white text-purple-600 rounded-full hover:bg-purple-50 transition-colors shadow-lg hover:shadow-xl flex items-center justify-center gap-2"
             >
               Get started for free
               <ArrowRight className="w-5 h-5" />
-            </motion.button>
+            </motion.a>
           </div>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center">

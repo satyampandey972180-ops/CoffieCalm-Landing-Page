@@ -63,13 +63,16 @@ export function Navigation() {
         {/* Desktop CTA */}
         <div className="hidden lg:flex items-center gap-4">
 
-          <motion.button
+          <motion.a
+            href="https://app.coffiecalm.com"
+            target="_blank"
+            rel="noopener noreferrer"
             whileHover={{ scale: 1.05, boxShadow: '0 0 25px rgba(147, 51, 234, 0.4)' }}
             whileTap={{ scale: 0.95 }}
-            className="px-6 py-2 bg-gradient-to-r from-purple-600 to-sky-600 text-white rounded-full shadow-lg hover:shadow-xl transition-shadow"
+            className="px-6 py-2 bg-gradient-to-r from-purple-600 to-sky-600 text-white rounded-full shadow-lg hover:shadow-xl transition-shadow inline-block"
           >
             Get Started
-          </motion.button>
+          </motion.a>
         </div>
 
         {/* Mobile Menu Button */}
@@ -98,9 +101,14 @@ export function Navigation() {
             <a href="#features" className="text-gray-700 hover:text-purple-600 transition-colors">Features</a>
             <a href="#about" className="text-gray-700 hover:text-purple-600 transition-colors">About</a>
 
-            <button className="px-6 py-2 bg-gradient-to-r from-purple-600 to-sky-600 text-white rounded-full shadow-md">
+            <a
+              href="https://app.coffiecalm.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="px-6 py-2 bg-gradient-to-r from-purple-600 to-sky-600 text-white rounded-full shadow-md inline-block text-center"
+            >
               Get Started
-            </button>
+            </a>
           </div>
         </motion.div>
       )}
