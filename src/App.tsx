@@ -22,6 +22,7 @@ import { SnippetOptimized } from "./components/SnippetOptimized";
 import { TopicalAuthority } from "./components/TopicalAuthority";
 import { VoiceOptimizedFAQ } from "./components/VoiceOptimizedFAQ";
 import { SafetyAndPrivacy } from "./components/SafetyAndPrivacy";
+import { AEOAccordion, AEOAccordionGroup } from "./components/AEOAccordion";
 import { SEOHead, AllSchemas } from "./seo/components";
 
 export default function App() {
@@ -40,11 +41,6 @@ export default function App() {
       <main>
         {/* Hero Section */}
         <Hero />
-
-        {/* What is CoffieCalm - Entity Definition */}
-        <section>
-          <WhatIsCoffieCalm />
-        </section>
 
         {/* Stats Section */}
         <section>
@@ -96,44 +92,71 @@ export default function App() {
           <About />
         </section>
 
-        {/* Why Peer Support Works */}
-        <section>
-          <WhyPeerSupport />
-        </section>
+        {/* AEO-Optimized Content - Collapsible for Better UX */}
+        <AEOAccordionGroup 
+          title="Learn More" 
+          subtitle="Explore detailed information about CoffieCalm and mental wellness support"
+        >
+          <AEOAccordion 
+            title="What is CoffieCalm?" 
+            description="Learn about our platform and how we support mental wellness"
+          >
+            <WhatIsCoffieCalm />
+          </AEOAccordion>
 
-        {/* Snippet-Optimized Content */}
-        <section>
-          <SnippetOptimized />
-        </section>
+          <AEOAccordion 
+            title="Why Peer Support Works" 
+            description="Discover the science and benefits behind peer-to-peer support"
+          >
+            <WhyPeerSupport />
+          </AEOAccordion>
 
-        {/* Topical Authority Content */}
-        <section>
-          <TopicalAuthority />
-        </section>
+          <AEOAccordion 
+            title="Compare Your Options" 
+            description="See how CoffieCalm compares to traditional therapy"
+          >
+            <Comparison />
+          </AEOAccordion>
 
-        {/* Conversational Q&A Section */}
-        <section>
-          <ConversationalQA />
-        </section>
+          <AEOAccordion 
+            title="Common Questions" 
+            description="Get answers to frequently asked questions about mental health support"
+          >
+            <ConversationalQA />
+          </AEOAccordion>
 
-        {/* Comparison Section */}
-        <section>
-          <Comparison />
-        </section>
+          <AEOAccordion 
+            title="Mental Health Resources" 
+            description="In-depth information about peer support and mental wellness"
+          >
+            <TopicalAuthority />
+          </AEOAccordion>
+
+          <AEOAccordion 
+            title="Quick Answers" 
+            description="Fast, voice-friendly answers to your questions"
+          >
+            <VoiceOptimizedFAQ />
+          </AEOAccordion>
+
+          <AEOAccordion 
+            title="Privacy & Safety" 
+            description="Learn about our commitment to your safety and anonymity"
+          >
+            <SafetyAndPrivacy />
+          </AEOAccordion>
+
+          <AEOAccordion 
+            title="Key Information" 
+            description="Essential details about CoffieCalm's features and benefits"
+          >
+            <SnippetOptimized />
+          </AEOAccordion>
+        </AEOAccordionGroup>
 
         {/* FAQ Section */}
         <section id="faq">
           <FAQ />
-        </section>
-
-        {/* Voice-Optimized FAQ */}
-        <section>
-          <VoiceOptimizedFAQ />
-        </section>
-
-        {/* Safety and Privacy */}
-        <section>
-          <SafetyAndPrivacy />
         </section>
 
         {/* Final CTA Section */}

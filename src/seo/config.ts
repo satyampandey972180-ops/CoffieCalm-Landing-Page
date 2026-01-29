@@ -2,21 +2,21 @@
 
 export const SEO_CONFIG = {
   // Site Information
-  siteName: 'CoffieCalm',
-  siteUrl: 'https://www.coffiecalm.com',
-  defaultTitle: 'CoffieCalm - Anonymous Peer Support & Mental Wellness',
-  defaultDescription: 'Connect with empathetic listeners in a judgment-free space. CoffieCalm offers anonymous peer-to-peer support for mental wellness without social pressure.',
+  siteName: 'Coffie Calm',
+  siteUrl: 'https://coffiecalm.com',
+  defaultTitle: 'Coffie Calm - Anonymous Peer Support & Mental Wellness',
+  defaultDescription: 'Join Coffie Calm for anonymous peer support. Our platform connects you with empathetic listeners in a safe, judgment-free space for mental wellness.',
   
   // Social Media
   twitterHandle: '@coffiecalm',
   facebookUrl: 'https://facebook.com/coffiecalm',
   
   // Images
-  defaultOgImage: 'https://www.coffiecalm.com/og-image.png',
-  logo: 'https://www.coffiecalm.com/logo.png',
+  defaultOgImage: 'https://coffiecalm.com/og-image.png',
+  logo: 'https://coffiecalm.com/logo.png',
   
   // Organization Info
-  organizationName: 'CoffieCalm',
+  organizationName: 'Coffie Calm',
   organizationDescription: 'Peer-to-peer mental wellness platform offering anonymous support and emotional connection',
   
   // Analytics
@@ -74,31 +74,31 @@ export const META_KEYWORDS = [
 // Sitemap Configuration
 export const SITEMAP_URLS = [
   {
-    url: 'https://www.coffiecalm.com/',
+    url: 'https://coffiecalm.com/',
     lastmod: new Date().toISOString().split('T')[0],
     changefreq: 'weekly' as const,
     priority: 1.0,
   },
   {
-    url: 'https://www.coffiecalm.com/#features',
+    url: 'https://coffiecalm.com/#features',
     lastmod: new Date().toISOString().split('T')[0],
     changefreq: 'monthly' as const,
     priority: 0.8,
   },
   {
-    url: 'https://www.coffiecalm.com/#about',
+    url: 'https://coffiecalm.com/#about',
     lastmod: new Date().toISOString().split('T')[0],
     changefreq: 'monthly' as const,
     priority: 0.8,
   },
   {
-    url: 'https://www.coffiecalm.com/#how-it-works',
+    url: 'https://coffiecalm.com/#how-it-works',
     lastmod: new Date().toISOString().split('T')[0],
     changefreq: 'monthly' as const,
     priority: 0.7,
   },
   {
-    url: 'https://www.coffiecalm.com/#faq',
+    url: 'https://coffiecalm.com/#faq',
     lastmod: new Date().toISOString().split('T')[0],
     changefreq: 'monthly' as const,
     priority: 0.7,

@@ -1,7 +1,9 @@
 import { motion } from 'motion/react';
-import { Heart, Shield, Users, Sparkles } from 'lucide-react';
+import { Heart, Shield, Users, Sparkles, ChevronDown } from 'lucide-react';
+import { useState } from 'react';
 
 export function WhatIsCoffieCalm() {
+    const [showReadMore, setShowReadMore] = useState(false);
     return (
         <section className="py-24 px-6 lg:px-8 bg-white">
             <div className="max-w-7xl mx-auto">
@@ -23,9 +25,38 @@ export function WhatIsCoffieCalm() {
                             What is CoffieCalm?
                         </h2>
                         
-                        <p className="text-xl text-gray-600 leading-relaxed mb-8">
+                        <p className="text-xl text-gray-600 leading-relaxed mb-4">
                             <strong>CoffieCalm is a mental wellness platform that provides anonymous peer-to-peer emotional support.</strong> It connects people experiencing anxiety, stress, loneliness, or mental health challenges with empathetic listeners who understand—without therapy appointments, clinical records, or social media pressure. Available 24/7 for free.
                         </p>
+
+                        {/* Read More Section */}
+                        <div className="mb-8">
+                            <button
+                                onClick={() => setShowReadMore(!showReadMore)}
+                                className="text-purple-600 hover:text-purple-700 font-medium flex items-center gap-2 mx-auto transition-colors"
+                            >
+                                {showReadMore ? 'Read less' : 'Read more'}
+                                <ChevronDown className={`w-4 h-4 transition-transform ${showReadMore ? 'rotate-180' : ''}`} />
+                            </button>
+                            
+                            {showReadMore && (
+                                <motion.p
+                                    initial={{ opacity: 0, height: 0 }}
+                                    animate={{ opacity: 1, height: 'auto' }}
+                                    exit={{ opacity: 0, height: 0 }}
+                                    className="text-lg text-gray-600 mt-4 leading-relaxed"
+                                >
+                                    Coffie Calm serves as an accessible alternative to therapy for those who need immediate emotional support, prefer peer connection over clinical settings, or want ongoing mental wellness conversations without appointments or social media pressure. Our platform is used for anonymous emotional conversations where you can share freely, listen empathetically, and connect authentically—all in a judgment-free space designed specifically for mental wellness.
+                                </motion.p>
+                            )}
+                            
+                            {/* Hidden content for SEO when collapsed */}
+                            {!showReadMore && (
+                                <div className="hidden">
+                                    Coffie Calm serves as an accessible alternative to therapy for those who need immediate emotional support, prefer peer connection over clinical settings, or want ongoing mental wellness conversations without appointments or social media pressure. Our platform is used for anonymous emotional conversations where you can share freely, listen empathetically, and connect authentically—all in a judgment-free space designed specifically for mental wellness.
+                                </div>
+                            )}
+                        </div>
                     </div>
 
                     {/* Semantic Relationships Grid */}

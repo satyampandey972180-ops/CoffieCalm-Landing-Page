@@ -79,6 +79,10 @@ export function SEOHead({ config, googleAnalyticsId, googleSearchConsoleVerifica
         <meta name="google-site-verification" content={googleSearchConsoleVerification} />
       )}
       
+      {/* Note: Add your actual verification code from Google Search Console */}
+      {/* Get it from: https://search.google.com/search-console */}
+      {/* Example: <meta name="google-site-verification" content="abc123xyz456" /> */}
+      
       {/* Google Analytics */}
       {googleAnalyticsId && (
         <>

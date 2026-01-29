@@ -1,11 +1,12 @@
 import { motion, AnimatePresence } from 'motion/react';
-import { ArrowRight, Sparkles, Apple, Play, X, Download } from 'lucide-react';
+import { ArrowRight, Sparkles, Apple, Play, X, Download, ChevronDown } from 'lucide-react';
 import { ImageWithFallback } from './figma/ImageWithFallback';
 import { useState } from 'react';
 import { trackCTAClick, trackDownload } from '../seo/analytics';
 
 export function Hero() {
   const [showDownloadModal, setShowDownloadModal] = useState(false);
+  const [showReadMore, setShowReadMore] = useState(false);
   return (
     <section className="relative overflow-hidden px-6 pt-20 pb-32 lg:px-8">
       {/* Floating gradient orbs */}
@@ -30,9 +31,38 @@ export function Hero() {
               Anonymous Peer Support & Mental Wellness Platform
             </h1>
 
-            <p className="text-xl text-gray-600 mb-8 leading-relaxed">
-              <strong>CoffieCalm is a mental wellness platform that provides anonymous peer-to-peer emotional support for people experiencing anxiety, stress, and mental health challenges.</strong> Unlike traditional therapy, CoffieCalm offers judgment-free conversations with empathetic peer listeners who understand what you're going through. It's used for anonymous emotional conversations without appointments, social pressure, or clinical records—an accessible alternative to therapy for immediate support and ongoing mental wellness.
+            <p className="text-xl text-gray-600 mb-4 leading-relaxed">
+              <strong>CoffieCalm is a mental wellness platform that provides anonymous peer-to-peer emotional support for people experiencing anxiety, stress, and mental health challenges.</strong>
             </p>
+
+            {/* Read More Section */}
+            <div className="mb-8">
+              <button
+                onClick={() => setShowReadMore(!showReadMore)}
+                className="text-purple-600 hover:text-purple-700 font-medium flex items-center gap-2 transition-colors"
+              >
+                {showReadMore ? 'Read less' : 'Read more'}
+                <ChevronDown className={`w-4 h-4 transition-transform ${showReadMore ? 'rotate-180' : ''}`} />
+              </button>
+              
+              {showReadMore && (
+                <motion.p
+                  initial={{ opacity: 0, height: 0 }}
+                  animate={{ opacity: 1, height: 'auto' }}
+                  exit={{ opacity: 0, height: 0 }}
+                  className="text-lg text-gray-600 mt-4 leading-relaxed"
+                >
+                  Unlike traditional therapy, CoffieCalm offers judgment-free conversations with empathetic peer listeners who understand what you're going through. It's used for anonymous emotional conversations without appointments, social pressure, or clinical records—an accessible alternative to therapy for immediate support and ongoing mental wellness.
+                </motion.p>
+              )}
+              
+              {/* Hidden content for SEO when collapsed */}
+              {!showReadMore && (
+                <div className="hidden">
+                  Unlike traditional therapy, CoffieCalm offers judgment-free conversations with empathetic peer listeners who understand what you're going through. It's used for anonymous emotional conversations without appointments, social pressure, or clinical records—an accessible alternative to therapy for immediate support and ongoing mental wellness.
+                </div>
+              )}
+            </div>
 
             <div className="flex flex-col sm:flex-row gap-4 mb-8">
               <motion.a
