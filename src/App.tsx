@@ -14,6 +14,14 @@ import { FAQ } from "./components/FAQ";
 import { FinalCTA } from "./components/FinalCTA";
 import { Footer } from "./components/Footer";
 import { About } from "./components/About";
+import { WhatIsCoffieCalm } from "./components/WhatIsCoffieCalm";
+import { ConversationalQA } from "./components/ConversationalQA";
+import { Comparison } from "./components/Comparison";
+import { WhyPeerSupport } from "./components/WhyPeerSupport";
+import { SnippetOptimized } from "./components/SnippetOptimized";
+import { TopicalAuthority } from "./components/TopicalAuthority";
+import { VoiceOptimizedFAQ } from "./components/VoiceOptimizedFAQ";
+import { SafetyAndPrivacy } from "./components/SafetyAndPrivacy";
 import { SEOHead, AllSchemas } from "./seo/components";
 
 export default function App() {
@@ -32,6 +40,11 @@ export default function App() {
       <main>
         {/* Hero Section */}
         <Hero />
+
+        {/* What is CoffieCalm - Entity Definition */}
+        <section>
+          <WhatIsCoffieCalm />
+        </section>
 
         {/* Stats Section */}
         <section>
@@ -83,9 +96,44 @@ export default function App() {
           <About />
         </section>
 
+        {/* Why Peer Support Works */}
+        <section>
+          <WhyPeerSupport />
+        </section>
+
+        {/* Snippet-Optimized Content */}
+        <section>
+          <SnippetOptimized />
+        </section>
+
+        {/* Topical Authority Content */}
+        <section>
+          <TopicalAuthority />
+        </section>
+
+        {/* Conversational Q&A Section */}
+        <section>
+          <ConversationalQA />
+        </section>
+
+        {/* Comparison Section */}
+        <section>
+          <Comparison />
+        </section>
+
         {/* FAQ Section */}
         <section id="faq">
           <FAQ />
+        </section>
+
+        {/* Voice-Optimized FAQ */}
+        <section>
+          <VoiceOptimizedFAQ />
+        </section>
+
+        {/* Safety and Privacy */}
+        <section>
+          <SafetyAndPrivacy />
         </section>
 
         {/* Final CTA Section */}

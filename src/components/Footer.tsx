@@ -113,9 +113,15 @@ export function Footer() {
         </div>
 
         <div className="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
-          <p className="text-gray-400">
-            © {currentYear} CoffieCalm. All rights reserved.
-          </p>
+          <div className="flex flex-col md:flex-row items-center gap-4 text-gray-400">
+            <p>
+              © {currentYear} CoffieCalm. All rights reserved.
+            </p>
+            <span className="hidden md:inline text-gray-600">•</span>
+            <p className="text-sm">
+              Last updated: January 2026
+            </p>
+          </div>
 
           <div className="flex gap-8">
             <a 

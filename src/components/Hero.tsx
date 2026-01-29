@@ -31,7 +31,7 @@ export function Hero() {
             </h1>
 
             <p className="text-xl text-gray-600 mb-8 leading-relaxed">
-              CoffieCalm is your emotional support platform for peer-to-peer connection. No therapists, no influencers, just people sharing and listening in a warm, judgment-free space for mental health support.
+              <strong>CoffieCalm is a mental wellness platform that provides anonymous peer-to-peer emotional support for people experiencing anxiety, stress, and mental health challenges.</strong> Unlike traditional therapy, CoffieCalm offers judgment-free conversations with empathetic peer listeners who understand what you're going through. It's used for anonymous emotional conversations without appointments, social pressure, or clinical records—an accessible alternative to therapy for immediate support and ongoing mental wellness.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 mb-8">
@@ -94,16 +94,16 @@ export function Hero() {
 
             <div className="flex items-center gap-8">
               <div>
-                <div className="text-3xl bg-gradient-to-r from-purple-600 to-sky-600 bg-clip-text text-transparent">24/7</div>
+                <div className="text-3xl bg-gradient-to-r from-purple-600 to-sky-600 bg-clip-text text-transparent font-bold">10,000+</div>
+                <div className="text-gray-600">Supportive Conversations</div>
+              </div>
+              <div>
+                <div className="text-3xl bg-gradient-to-r from-purple-600 to-sky-600 bg-clip-text text-transparent font-bold">24/7</div>
                 <div className="text-gray-600">Active Listeners</div>
               </div>
               <div>
-                <div className="text-3xl bg-gradient-to-r from-purple-600 to-sky-600 bg-clip-text text-transparent">No ads</div>
-                <div className="text-gray-600">Pure Connection</div>
-              </div>
-              <div>
-                <div className="text-3xl bg-gradient-to-r from-purple-600 to-sky-600 bg-clip-text text-transparent">100%</div>
-                <div className="text-gray-600">Supportive</div>
+                <div className="text-3xl bg-gradient-to-r from-purple-600 to-sky-600 bg-clip-text text-transparent font-bold">100%</div>
+                <div className="text-gray-600">Free & Anonymous</div>
               </div>
             </div>
           </motion.div>

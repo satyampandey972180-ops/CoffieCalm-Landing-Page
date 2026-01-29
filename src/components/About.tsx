@@ -24,12 +24,15 @@ export function About() {
                     </div>
 
                     <h2 className="text-5xl lg:text-6xl font-bold mb-8 bg-gradient-to-r from-purple-600 to-sky-600 bg-clip-text text-transparent tracking-tight">
-                        Peer-to-Peer Mental Health Support
+                        What is CoffieCalm?
                     </h2>
 
+                    <p className="text-xl lg:text-2xl text-gray-600 leading-relaxed font-light mb-6">
+                        <strong>CoffieCalm is a mental wellness platform</strong> designed for people seeking emotional support without the barriers of traditional therapy. We provide anonymous peer-to-peer conversations that help with anxiety, stress, loneliness, and everyday mental health challenges.
+                    </p>
+
                     <p className="text-xl lg:text-2xl text-gray-600 leading-relaxed font-light">
-                        Our anonymous mental health support platform connects people for meaningful conversations in a safe space. Experience peer support for anxiety and depression without the pressure of profiles, feeds, or social performance.
-                        <br /><br />
+                        CoffieCalm serves as an accessible alternative to therapy for those who need immediate emotional support, prefer peer connection over clinical settings, or want ongoing mental wellness conversations without appointments or social media pressure. Our platform is used for anonymous emotional conversations where you can share freely, listen empathetically, and connect authentically—all in a judgment-free space designed specifically for mental wellness.
                     </p>
                 </motion.div>
 
@@ -44,13 +47,13 @@ export function About() {
                         <div className="w-14 h-14 bg-gradient-to-br from-purple-500 to-purple-600 rounded-2xl flex items-center justify-center mb-8 shadow-lg shadow-purple-500/20">
                             <Zap className="w-7 h-7 text-white" />
                         </div>
-                        <h3 className="text-3xl font-bold mb-6 text-gray-900">How it works</h3>
+                        <h3 className="text-3xl font-bold mb-6 text-gray-900">How CoffieCalm Works</h3>
                         <div className="prose prose-lg text-gray-600 leading-relaxed">
                             <p className="mb-6">
-                                You start by sharing a thought, question, or topic. The system matches you with someone interested in it. You both talk without judgment or obligation.
+                                <strong>CoffieCalm provides peer-to-peer emotional support</strong> through anonymous conversations. You start by sharing a thought, question, or feeling. The system matches you with someone interested in listening or sharing similar experiences. You both talk without judgment or obligation.
                             </p>
                             <p>
-                                If the interaction feels worthwhile, you can choose to continue as friends. If not, you disconnect and move on. Nothing follows you around and nothing builds a public history.
+                                If the interaction feels worthwhile, you can choose to continue as friends. If not, you disconnect and move on. Nothing follows you around and nothing builds a public history. <strong>CoffieCalm is used for authentic emotional connection</strong> without the noise of social media.
                             </p>
                         </div>
                     </motion.div>
@@ -65,13 +68,13 @@ export function About() {
                         <div className="w-14 h-14 bg-gradient-to-br from-sky-500 to-sky-600 rounded-2xl flex items-center justify-center mb-8 shadow-lg shadow-sky-500/20">
                             <Target className="w-7 h-7 text-white" />
                         </div>
-                        <h3 className="text-3xl font-bold mb-6 text-gray-900">What it aims to solve</h3>
+                        <h3 className="text-3xl font-bold mb-6 text-gray-900">What Makes CoffieCalm Different</h3>
                         <div className="prose prose-lg text-gray-600 leading-relaxed">
                             <p className="mb-6">
-                                Most social apps focus on exposure, status, and retention. This one focuses on connection and clarity.
+                                <strong>Unlike traditional therapy</strong>, CoffieCalm offers peer support without appointments, clinical settings, or professional fees. <strong>Compared to social media</strong>, we focus on genuine connection without likes, followers, or public performance.
                             </p>
                             <p>
-                                It gives people a simple place to talk to someone new without noise, baggage, or expectations.
+                                <strong>CoffieCalm is an alternative to therapy</strong> for those seeking immediate emotional support, ongoing peer connection, or a judgment-free space to process feelings. It's ideal when you need someone to talk to right now, without the formality or cost of professional counseling.
                             </p>
                         </div>
                     </motion.div>

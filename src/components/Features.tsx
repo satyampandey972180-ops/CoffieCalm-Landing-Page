@@ -6,36 +6,42 @@ const features = [
     icon: Shield,
     title: 'Anonymous & Safe',
     description: 'Express yourself freely with pseudonymous profiles. Your privacy creates a space for honesty.',
+    benefit: 'Reduces anxiety about judgment and allows you to share openly without fear of social consequences.',
     color: 'from-purple-500 to-purple-600'
   },
   {
     icon: MessageCircle,
     title: 'Sharing Circles',
     description: 'Join small, intimate group chats centered around specific topics or feelings.',
+    benefit: 'Helps you feel less alone by connecting with others experiencing similar mental health challenges.',
     color: 'from-sky-500 to-sky-600'
   },
   {
     icon: Heart,
     title: 'Listener Role',
-    description: 'Empathetic peers who are here to simple listen and support you.',
+    description: 'Empathetic peers who are here to simply listen and support you.',
+    benefit: 'Provides emotional validation and understanding from people with lived experience of mental health struggles.',
     color: 'from-pink-500 to-pink-600'
   },
   {
     icon: Moon,
     title: 'Calm Pace',
     description: 'No likes, no followers, no rush. A chat environment designed for depth, not dopamine.',
+    benefit: 'Reduces stress and social pressure, allowing authentic emotional conversations without performance anxiety.',
     color: 'from-indigo-500 to-indigo-600'
   },
   {
     icon: Users,
     title: 'No Social Pressure',
     description: 'Avoid the noise of social media. Connect without performance anxiety.',
+    benefit: 'Improves mental wellness by removing comparison, competition, and the need to maintain a public image.',
     color: 'from-teal-500 to-teal-600'
   },
   {
     icon: TrendingUp,
     title: 'Queue System',
     description: 'Fair and accessible connection to listeners when you need them most.',
+    benefit: 'Ensures immediate emotional support is available 24/7, helping during moments of acute stress or anxiety.',
     color: 'from-orange-500 to-orange-600'
   }
 ];
@@ -72,8 +78,13 @@ export function Features() {
                 <feature.icon className="w-6 h-6 text-white" />
               </div>
 
-              <h3 className="text-xl mb-3 text-gray-900">{feature.title}</h3>
-              <p className="text-gray-600 leading-relaxed">{feature.description}</p>
+              <h3 className="text-xl mb-3 text-gray-900 font-bold">{feature.title}</h3>
+              <p className="text-gray-600 leading-relaxed mb-3">{feature.description}</p>
+              <div className="pt-3 border-t border-gray-100">
+                <p className="text-sm text-purple-700 font-medium">
+                  <span className="text-purple-900 font-semibold">Mental Health Benefit:</span> {feature.benefit}
+                </p>
+              </div>
 
               {/* Subtle gradient overlay on hover */}
               <div className="absolute inset-0 bg-gradient-to-br from-purple-500/5 to-sky-500/5 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none"></div>
