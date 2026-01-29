@@ -42,10 +42,9 @@ export function SEOHead({ config, googleAnalyticsId, googleSearchConsoleVerifica
       <meta name="robots" content={robots} />
       {author && <meta name="author" content={author} />}
       
-      {/* Security Headers */}
+      {/* Security Headers - Note: X-Frame-Options must be set via HTTP headers, not meta tags */}
       <meta httpEquiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://www.googletagmanager.com https://www.google-analytics.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https: http:; connect-src 'self' https://www.google-analytics.com; frame-src 'self';" />
       <meta httpEquiv="X-Content-Type-Options" content="nosniff" />
-      <meta httpEquiv="X-Frame-Options" content="SAMEORIGIN" />
       <meta httpEquiv="X-XSS-Protection" content="1; mode=block" />
       <meta name="referrer" content="strict-origin-when-cross-origin" />
       

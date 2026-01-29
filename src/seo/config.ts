@@ -5,7 +5,7 @@ export const SEO_CONFIG = {
   siteName: 'Coffie Calm',
   siteUrl: 'https://coffiecalm.com',
   defaultTitle: 'Coffie Calm - Anonymous Peer Support & Mental Wellness',
-  defaultDescription: 'Join Coffie Calm for anonymous peer support. Our platform connects you with empathetic listeners in a safe, judgment-free space for mental wellness.',
+  defaultDescription: 'Join Coffie Calm for anonymous peer support and mental wellness. Connect with empathetic listeners in a safe, judgment-free space. Available 24/7, free.',
   
   // Social Media
   twitterHandle: '@coffiecalm',
