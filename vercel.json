@@ -1,13 +1,6 @@
 {
   "buildCommand": "npm run build",
   "outputDirectory": "dist",
-  "redirects": [
-    {
-      "source": "https://coffiecalm.com/:path*",
-      "destination": "https://www.coffiecalm.com/:path*",
-      "permanent": true
-    }
-  ],
   "headers": [
     {
       "source": "/sitemap.xml",
