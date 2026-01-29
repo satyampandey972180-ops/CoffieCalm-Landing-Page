@@ -51,9 +51,9 @@ export function Features() {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl lg:text-5xl text-gray-900 mb-4">A Café for Your Thoughts</h2>
+          <h2 className="text-4xl lg:text-5xl text-gray-900 mb-4">Mental Wellness Community Features</h2>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-            Features designed to create a warm, low-pressure environment for real connection.
+            Anonymous listening and peer support features designed for judgment-free emotional wellness.
           </p>
         </motion.div>
 

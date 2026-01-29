@@ -24,11 +24,11 @@ export function About() {
                     </div>
 
                     <h2 className="text-5xl lg:text-6xl font-bold mb-8 bg-gradient-to-r from-purple-600 to-sky-600 bg-clip-text text-transparent tracking-tight">
-                        Connection without pressure.
+                        Peer-to-Peer Mental Health Support
                     </h2>
 
                     <p className="text-xl lg:text-2xl text-gray-600 leading-relaxed font-light">
-                        This app connects two people for short, focused conversations based on shared topics. The goal is to make talking easy without the pressure of profiles, feeds, or social performance.
+                        Our anonymous mental health support platform connects people for meaningful conversations in a safe space. Experience peer support for anxiety and depression without the pressure of profiles, feeds, or social performance.
                         <br /><br />
                     </p>
                 </motion.div>

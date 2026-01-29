@@ -2,6 +2,7 @@ import { Menu, Heart, X } from 'lucide-react';
 import { motion } from 'motion/react';
 import { useState, useEffect } from 'react';
 import img1 from './images/1.png';
+import { trackNavigation, trackCTAClick } from '../seo/analytics';
 
 
 
@@ -34,7 +35,7 @@ export function Navigation() {
         >
           <div className="w-10 h-10 bg-gradient-to-br from-purple-600 to-sky-600 rounded-xl flex items-center justify-center shadow-lg">
             {/* <Heart className="w-6 h-6 text-white" /> */}
-            <img src={img1} alt='img' className="w-8 h-8" />
+            <img src={img1} alt="CoffieCalm logo - mental wellness platform" className="w-8 h-8" />
           </div>
           <span className="text-2xl bg-gradient-to-r from-purple-600 to-sky-600 bg-clip-text text-transparent">CoffieCalm</span>
         </motion.div>
@@ -42,19 +43,35 @@ export function Navigation() {
         {/* Desktop Navigation */}
         <div className="hidden lg:flex items-center gap-8">
 
-          <a href="#HowItWorks" className="text-gray-700 hover:text-purple-600 transition-colors relative group">
+          <a 
+            href="#HowItWorks" 
+            onClick={() => trackNavigation('How It Works')}
+            className="text-gray-700 hover:text-purple-600 transition-colors relative group"
+          >
             How It Works
             <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-purple-600 to-sky-600 group-hover:w-full transition-all duration-300"></span>
           </a>
-          <a href="#features" className="text-gray-700 hover:text-purple-600 transition-colors relative group">
+          <a 
+            href="#features" 
+            onClick={() => trackNavigation('Features')}
+            className="text-gray-700 hover:text-purple-600 transition-colors relative group"
+          >
             Features
             <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-purple-600 to-sky-600 group-hover:w-full transition-all duration-300"></span>
           </a>
-          <a href="#about" className="text-gray-700 hover:text-purple-600 transition-colors relative group">
+          <a 
+            href="#about" 
+            onClick={() => trackNavigation('About')}
+            className="text-gray-700 hover:text-purple-600 transition-colors relative group"
+          >
             About
             <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-purple-600 to-sky-600 group-hover:w-full transition-all duration-300"></span>
           </a>
-          <a href="#faq" className="text-gray-700 hover:text-purple-600 transition-colors relative group">
+          <a 
+            href="#faq" 
+            onClick={() => trackNavigation('FAQ')}
+            className="text-gray-700 hover:text-purple-600 transition-colors relative group"
+          >
             FAQ
             <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-purple-600 to-sky-600 group-hover:w-full transition-all duration-300"></span>
           </a>
@@ -67,6 +84,7 @@ export function Navigation() {
             href="https://app.coffiecalm.com"
             target="_blank"
             rel="noopener noreferrer"
+            onClick={() => trackCTAClick('Get Started', 'Navigation')}
             whileHover={{ scale: 1.05, boxShadow: '0 0 25px rgba(147, 51, 234, 0.4)' }}
             whileTap={{ scale: 0.95 }}
             className="px-6 py-2 bg-gradient-to-r from-purple-600 to-sky-600 text-white rounded-full shadow-lg hover:shadow-xl transition-shadow inline-block"
@@ -79,6 +97,9 @@ export function Navigation() {
         <button
           className="lg:hidden"
           onClick={() => setIsMenuOpen(!isMenuOpen)}
+          aria-label="Toggle navigation menu"
+          aria-expanded={isMenuOpen}
+          aria-controls="mobile-menu"
         >
           {isMenuOpen ? (
             <X className="w-6 h-6 text-gray-700" />
@@ -91,20 +112,42 @@ export function Navigation() {
       {/* Mobile Menu */}
       {isMenuOpen && (
         <motion.div
+          id="mobile-menu"
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           className="lg:hidden mt-4 pb-4 border-t border-gray-200"
+          role="navigation"
+          aria-label="Mobile navigation"
         >
           <div className="flex flex-col gap-4 pt-4">
 
-            <a href="#experience" className="text-gray-700 hover:text-purple-600 transition-colors">How It Works</a>
-            <a href="#features" className="text-gray-700 hover:text-purple-600 transition-colors">Features</a>
-            <a href="#about" className="text-gray-700 hover:text-purple-600 transition-colors">About</a>
+            <a 
+              href="#experience" 
+              onClick={() => trackNavigation('How It Works')}
+              className="text-gray-700 hover:text-purple-600 transition-colors"
+            >
+              How It Works
+            </a>
+            <a 
+              href="#features" 
+              onClick={() => trackNavigation('Features')}
+              className="text-gray-700 hover:text-purple-600 transition-colors"
+            >
+              Features
+            </a>
+            <a 
+              href="#about" 
+              onClick={() => trackNavigation('About')}
+              className="text-gray-700 hover:text-purple-600 transition-colors"
+            >
+              About
+            </a>
 
             <a
               href="https://app.coffiecalm.com"
               target="_blank"
               rel="noopener noreferrer"
+              onClick={() => trackCTAClick('Get Started', 'Mobile Navigation')}
               className="px-6 py-2 bg-gradient-to-r from-purple-600 to-sky-600 text-white rounded-full shadow-md inline-block text-center"
             >
               Get Started

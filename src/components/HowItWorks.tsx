@@ -35,9 +35,9 @@ export function HowItWorks() {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl lg:text-5xl text-gray-900 mb-4">How It Works</h2>
+          <h2 className="text-4xl lg:text-5xl text-gray-900 mb-4">How Our Anonymous Chat Works</h2>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-            Begin your mental wellness journey in just a few simple steps.
+            Start your free emotional support chat journey in just a few simple steps.
           </p>
         </motion.div>
 

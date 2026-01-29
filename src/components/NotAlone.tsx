@@ -17,7 +17,7 @@ export function NotAlone() {
           >
             <ImageWithFallback
               src={safeSpaceImg}
-              alt="Anonymous chat with caring listeners"
+              alt="Anonymous chat with caring listeners - safe space for mental health support"
               className="w-full h-auto max-h-96 object-cover"
             />
           </motion.div>

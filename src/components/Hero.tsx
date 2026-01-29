@@ -2,6 +2,7 @@ import { motion, AnimatePresence } from 'motion/react';
 import { ArrowRight, Sparkles, Apple, Play, X, Download } from 'lucide-react';
 import { ImageWithFallback } from './figma/ImageWithFallback';
 import { useState } from 'react';
+import { trackCTAClick, trackDownload } from '../seo/analytics';
 
 export function Hero() {
   const [showDownloadModal, setShowDownloadModal] = useState(false);
@@ -26,11 +27,11 @@ export function Hero() {
             </div>
 
             <h1 className="text-5xl lg:text-6xl mb-6 bg-gradient-to-r from-purple-600 to-sky-600 bg-clip-text text-transparent">
-              A place to share, listen, and feel heard.
+              Anonymous Peer Support & Mental Wellness Platform
             </h1>
 
             <p className="text-xl text-gray-600 mb-8 leading-relaxed">
-              CoffieCalm is your peer-to-peer café for thoughts. No therapists, no influencers, just people sharing and listening in a warm, judgment-free space.
+              CoffieCalm is your emotional support platform for peer-to-peer connection. No therapists, no influencers, just people sharing and listening in a warm, judgment-free space for mental health support.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 mb-8">
@@ -38,6 +39,7 @@ export function Hero() {
                 href="https://app.coffiecalm.com"
                 target="_blank"
                 rel="noopener noreferrer"
+                onClick={() => trackCTAClick('Join the Café', 'Hero')}
                 whileHover={{ scale: 1.05, boxShadow: '0 0 30px rgba(147, 51, 234, 0.5)' }}
                 whileTap={{ scale: 0.95 }}
                 className="px-8 py-4 bg-gradient-to-r from-purple-600 to-sky-600 text-white rounded-full flex items-center justify-center gap-2 shadow-lg hover:shadow-xl transition-shadow"
@@ -58,7 +60,10 @@ export function Hero() {
 
             <div className="flex flex-col sm:flex-row gap-4 mb-8">
               <motion.button
-                onClick={() => setShowDownloadModal(true)}
+                onClick={() => {
+                  trackDownload('App Store');
+                  setShowDownloadModal(true);
+                }}
                 className="flex items-center gap-3 px-6 py-3 bg-gray-900 text-white rounded-xl shadow-md transition-all cursor-pointer"
                 whileHover={{ scale: 1.05, backgroundColor: '#000', boxShadow: '0 10px 30px rgba(0, 0, 0, 0.3)' }}
                 whileTap={{ scale: 0.95 }}
@@ -71,7 +76,10 @@ export function Hero() {
               </motion.button>
 
               <motion.button
-                onClick={() => setShowDownloadModal(true)}
+                onClick={() => {
+                  trackDownload('Google Play');
+                  setShowDownloadModal(true);
+                }}
                 className="flex items-center gap-3 px-6 py-3 bg-gray-900 text-white rounded-xl shadow-md transition-all cursor-pointer"
                 whileHover={{ scale: 1.05, backgroundColor: '#000', boxShadow: '0 10px 30px rgba(0, 0, 0, 0.3)' }}
                 whileTap={{ scale: 0.95 }}
@@ -110,8 +118,11 @@ export function Hero() {
             <div className="relative rounded-3xl overflow-hidden shadow-2xl">
               <ImageWithFallback
                 src="https://images.unsplash.com/photo-1722094250550-4993fa28a51b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwZWFjZWZ1bCUyMG1lZGl0YXRpb24lMjB3ZWxsbmVzc3xlbnwxfHx8fDE3NjUzMjcwOTR8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
-                alt="Person meditating peacefully"
+                alt="Person meditating peacefully in calm environment - mental wellness and mindfulness"
                 className="w-full h-auto max-h-96 object-cover"
+                lazy={false}
+                width={1080}
+                height={720}
               />
               <div className="absolute inset-0 bg-gradient-to-t from-purple-900/20 to-transparent"></div>
             </div>

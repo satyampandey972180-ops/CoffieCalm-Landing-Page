@@ -16,7 +16,7 @@ export function VirtualSessions() {
           >
             <ImageWithFallback
               src={quietCornerImg}
-              alt="People having meaningful conversation"
+              alt="People having meaningful conversation in quiet corner - peer support and emotional wellness"
               className="w-full h-auto max-h-96 object-cover"
             />
           </motion.div>

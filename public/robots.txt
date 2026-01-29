@@ -1,0 +1,20 @@
+# robots.txt for CoffieCalm
+
+User-agent: *
+Allow: /
+Disallow: /api/
+Disallow: /admin/
+
+# Sitemap location
+Sitemap: https://www.coffiecalm.com/sitemap.xml
+
+# Google bot
+User-agent: Googlebot
+Allow: /
+
+# Bing bot
+User-agent: Bingbot
+Allow: /
+
+# Crawl-delay (optional, in seconds)
+Crawl-delay: 1

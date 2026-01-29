@@ -42,7 +42,7 @@ export function TherapyCommunity() {
           >
             <ImageWithFallback
               src={sharingCirclesImg}
-              alt="Sharing Circles: Small groups, big support"
+              alt="Sharing circles - small groups providing big support in mental wellness community"
               className="w-full h-auto max-h-96 object-cover"
             />
           </motion.div>

@@ -2,6 +2,7 @@ import { motion } from 'motion/react';
 import { Apple, Play, ArrowRight } from 'lucide-react';
 import { useState } from 'react';
 import { DownloadModal } from './DownloadModal';
+import { trackCTAClick, trackDownload } from '../seo/analytics';
 
 export function FinalCTA() {
   const [showDownloadModal, setShowDownloadModal] = useState(false);
@@ -33,6 +34,7 @@ export function FinalCTA() {
               href="https://app.coffiecalm.com"
               target="_blank"
               rel="noopener noreferrer"
+              onClick={() => trackCTAClick('Get started for free', 'Final CTA')}
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               className="px-10 py-4 bg-white text-purple-600 rounded-full hover:bg-purple-50 transition-colors shadow-lg hover:shadow-xl flex items-center justify-center gap-2"
@@ -44,7 +46,10 @@ export function FinalCTA() {
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <motion.button
-              onClick={() => setShowDownloadModal(true)}
+              onClick={() => {
+                trackDownload('App Store');
+                setShowDownloadModal(true);
+              }}
               className="flex items-center gap-3 px-6 py-3 bg-white/10 backdrop-blur-sm rounded-xl hover:bg-white/20 transition-colors border border-white/20 text-white shadow-md cursor-pointer"
             >
               <Apple className="w-6 h-6" />
@@ -55,7 +60,10 @@ export function FinalCTA() {
             </motion.button>
 
             <motion.button
-              onClick={() => setShowDownloadModal(true)}
+              onClick={() => {
+                trackDownload('Google Play');
+                setShowDownloadModal(true);
+              }}
               className="flex items-center gap-3 px-6 py-3 bg-white/10 backdrop-blur-sm rounded-xl hover:bg-white/20 transition-colors border border-white/20 text-white shadow-md cursor-pointer"
             >
               <Play className="w-6 h-6" />

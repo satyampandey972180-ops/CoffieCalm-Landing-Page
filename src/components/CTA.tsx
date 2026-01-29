@@ -1,6 +1,7 @@
 import { motion } from 'motion/react';
 import { ArrowRight, Shield } from 'lucide-react';
 import { ImageWithFallback } from './figma/ImageWithFallback';
+import { trackCTAClick } from '../seo/analytics';
 
 export function CTA() {
   return (
@@ -28,6 +29,7 @@ export function CTA() {
             
             <div className="flex flex-col sm:flex-row gap-4 mb-8">
               <motion.button
+                onClick={() => trackCTAClick('Start Free Trial', 'Mid-page CTA')}
                 whileHover={{ scale: 1.05, boxShadow: '0 0 40px rgba(255, 255, 255, 0.6)' }}
                 whileTap={{ scale: 0.95 }}
                 className="px-8 py-4 bg-white text-purple-600 rounded-full flex items-center justify-center gap-2 shadow-lg hover:shadow-xl transition-shadow"
@@ -37,6 +39,7 @@ export function CTA() {
               </motion.button>
               
               <motion.button
+                onClick={() => trackCTAClick('Schedule a Demo', 'Mid-page CTA')}
                 whileHover={{ scale: 1.05, backgroundColor: 'rgba(168, 85, 247, 0.8)' }}
                 whileTap={{ scale: 0.95 }}
                 className="px-8 py-4 bg-purple-500 text-white rounded-full border-2 border-white/30 hover:bg-purple-400 transition-all"

@@ -42,7 +42,7 @@ export function UnderstandingCare() {
           >
             <ImageWithFallback
               src={empathyImg}
-              alt="Real empathy from real people"
+              alt="Real empathy from real people - compassionate peer support and understanding care"
               className="w-full h-auto max-h-96 object-cover"
             />
           </motion.div>
