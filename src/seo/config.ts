@@ -4,8 +4,8 @@ export const SEO_CONFIG = {
   // Site Information
   siteName: 'Coffie Calm',
   siteUrl: 'https://coffiecalm.com',
-  defaultTitle: 'Coffie Calm - Anonymous Peer Support & Mental Wellness',
-  defaultDescription: 'Join Coffie Calm for anonymous peer support and mental wellness. Connect with empathetic listeners in a safe, judgment-free space. Available 24/7, free.',
+  defaultTitle: 'CoffieCalm - Anonymous Chat, Random Chat Online & Mental Wellness Support',
+  defaultDescription: 'CoffieCalm: Free anonymous chat and random chat online for mental wellness. Connect with peer support, vent anonymously, and find long-term mental health support without phone numbers. Perfect for developer burnout, work stress, and emotional wellbeing. Available 24/7.',
   
   // Social Media
   twitterHandle: '@coffiecalm',
@@ -25,50 +25,96 @@ export const SEO_CONFIG = {
 
 // Primary Keywords (for H1 headings)
 export const PRIMARY_KEYWORDS = [
-  'mental wellness app',
   'anonymous peer support',
-  'emotional support platform',
-  'mental health chat',
+  'mental wellness',
+  'random chat online',
+  'anonymous chat',
+  'mental health support',
 ];
 
 // Secondary Keywords (for H2/H3 headings)
 export const SECONDARY_KEYWORDS = [
-  'peer-to-peer therapy',
-  'anonymous listening',
-  'judgment-free support',
-  'mental wellness community',
-  'safe space chat',
-  'emotional wellness app',
   'peer support',
-  'mental health',
-  'anonymous chat',
+  'anonymous venting',
+  'random chat',
+  'mental wellbeing',
   'emotional support',
+  'peer chat',
+  'developer burnout',
+  'work stress support',
+  'online friendship',
+  'long term mental support',
+  'anonymous support chat',
+  'mental wellness community',
 ];
 
 // Long-tail Keywords (for body content)
 export const LONG_TAIL_KEYWORDS = [
   'anonymous mental health support online',
-  'peer support for anxiety and depression',
-  'free emotional support chat',
-  'mental wellness app without social pressure',
-  'anonymous listener platform',
-  'judgment-free mental health community',
-  'peer-to-peer emotional support',
-  'safe space for mental wellness',
+  'random chat with strangers for mental support',
+  'free peer support platform for developers',
+  'anonymous chat without phone number',
+  'long term mental health support without therapy costs',
+  'mental health alternatives India',
+  'anonymous venting platform',
+  'peer to peer mental wellness',
+  'random stranger chat for emotional support',
+  'builder burnout support',
+  'coding burnout help',
+  'anonymous online chat for emotional release',
+  'mental wellbeing chat without sign up',
 ];
 
 // Meta Keywords
 export const META_KEYWORDS = [
+  // Core terms
+  'CoffieCalm',
+  'Coffie Calm',
+  'Coffee Calm',
   'mental wellness',
   'peer support',
   'anonymous chat',
+  'mental health',
+  
+  // Chat variations
+  'random chat',
+  'random chat online',
+  'anonymous chat online',
+  'anonymous support chat',
+  'peer chat',
+  
+  // Mental health
+  'mental support',
+  'mental wellbeing',
   'emotional support',
-  'mental health app',
-  'safe space',
-  'listening platform',
-  'peer-to-peer therapy',
-  'judgment-free support',
+  'mental health support',
   'mental wellness community',
+  
+  // Long-term support
+  'long term mental support',
+  'ongoing mental health support',
+  
+  // Burnout
+  'developer burnout',
+  'work burnout',
+  'builder burnout',
+  'coding burnout',
+  
+  // Connection
+  'online friendship',
+  'emotional connection',
+  'supportive community',
+  
+  // India-specific
+  'mental health India',
+  'peer support India',
+  'therapy alternatives India',
+  
+  // Features
+  'anonymous venting',
+  'no phone number required',
+  'free mental health support',
+  '24/7 peer support',
 ];
 
 // Sitemap Configuration

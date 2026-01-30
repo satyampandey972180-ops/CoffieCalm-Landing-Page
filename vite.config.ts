@@ -54,6 +54,9 @@
       outDir: 'dist',
       minify: 'esbuild',
       cssMinify: true,
+      // 2026 Performance Optimizations
+      sourcemap: false,
+      chunkSizeWarningLimit: 1000,
       rollupOptions: {
         output: {
           manualChunks: {
@@ -64,9 +67,15 @@
               '@radix-ui/react-dialog',
               '@radix-ui/react-dropdown-menu',
             ],
+            'seo-vendor': ['react-helmet-async'],
           },
+          // Optimize chunk naming for better caching
+          chunkFileNames: 'assets/[name]-[hash].js',
+          entryFileNames: 'assets/[name]-[hash].js',
+          assetFileNames: 'assets/[name]-[hash].[ext]',
         },
       },
+      reportCompressedSize: true,
     },
     server: {
       port: 3000,
