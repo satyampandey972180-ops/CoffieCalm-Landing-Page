@@ -8,6 +8,10 @@ Disallow: /admin/
 # Sitemap location
 Sitemap: https://www.coffiecalm.com/sitemap.xml
 
+# LLM Context File
+# https://llmstxt.org/
+Allow: /llms.txt
+
 # Google bot
 User-agent: Googlebot
 Allow: /
