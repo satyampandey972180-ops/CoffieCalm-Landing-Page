@@ -12,8 +12,8 @@ const features = [
   {
     icon: MessageCircle,
     title: 'Random Chat & Sharing Circles',
-    description: 'Join random chat connections or themed sharing circles for peer support. Our anonymous random chat online feature instantly matches you with empathetic listeners, while sharing circles provide ongoing community support for specific topics like anxiety, stress, or developer burnout.',
-    benefit: 'Choose between instant random chat for immediate support or join circles for ongoing peer connections. Get immediate mental wellness support through random chat without appointments or waiting.',
+    description: 'Connect instantly through anonymous random chat online or join themed sharing circles for ongoing peer support on topics like anxiety, stress, or developer burnout.',
+    benefit: 'Get immediate mental wellness support through random chat without appointments, or build lasting connections in supportive circles.',
     color: 'from-sky-500 to-sky-600'
   },
   {
