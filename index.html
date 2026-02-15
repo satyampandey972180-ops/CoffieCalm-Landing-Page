@@ -35,6 +35,11 @@
       <meta name="apple-mobile-web-app-capable" content="yes" />
       <meta name="apple-mobile-web-app-title" content="Coffie Calm" />
       
+      <!-- Contact and Legal Pages -->
+      <link rel="contact" href="https://coffiecalm.com/contact.html" />
+      <link rel="privacy-policy" href="https://coffiecalm.com/privacy.html" />
+      <link rel="terms-of-service" href="https://coffiecalm.com/terms.html" />
+      
       <!-- Favicons for all devices and search engines -->
       <link rel="icon" type="image/png" sizes="48x48" href="/favicon-48x48.png">
       <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
@@ -69,6 +74,58 @@
         function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());
         gtag('config', 'G-SW6JJRDQWW');
+      </script>
+      
+      <!-- Organization Structured Data with Contact Info -->
+      <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "CoffieCalm",
+        "alternateName": ["Coffie Calm", "Coffee Calm"],
+        "url": "https://coffiecalm.com",
+        "logo": "https://coffiecalm.com/favicon.png",
+        "description": "Anonymous peer support platform for mental wellness, offering free random chat online and anonymous chat without phone numbers. Perfect for developer burnout and emotional support.",
+        "foundingDate": "2026",
+        "contactPoint": [
+          {
+            "@type": "ContactPoint",
+            "contactType": "Customer Support",
+            "email": "support@coffiecalm.com",
+            "availableLanguage": ["English"],
+            "areaServed": "Worldwide"
+          },
+          {
+            "@type": "ContactPoint",
+            "contactType": "Founder",
+            "email": "founder@coffiecalm.com",
+            "availableLanguage": ["English"],
+            "areaServed": "Worldwide"
+          }
+        ],
+        "sameAs": [
+          "https://twitter.com/coffiecalm",
+          "https://instagram.com/coffiecalm",
+          "https://pinterest.com/coffiecalm",
+          "https://www.reddit.com/user/coffiecalm/"
+        ]
+      }
+      </script>
+      
+      <!-- WebSite Structured Data with Search Action -->
+      <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "CoffieCalm",
+        "url": "https://coffiecalm.com",
+        "description": "Free anonymous chat and random chat online for mental wellness support",
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": "https://coffiecalm.com/?q={search_term_string}",
+          "query-input": "required name=search_term_string"
+        }
+      }
       </script>
     </head>
 

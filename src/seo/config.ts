@@ -4,12 +4,16 @@ export const SEO_CONFIG = {
   // Site Information
   siteName: 'Coffie Calm',
   siteUrl: 'https://coffiecalm.com',
-  defaultTitle: 'CoffieCalm - Anonymous Chat, Random Chat Online & Mental Wellness Support',
-  defaultDescription: 'CoffieCalm: Free anonymous chat and random chat online for mental wellness. Connect with peer support, vent anonymously, and find long-term mental health support without phone numbers. Perfect for developer burnout, work stress, and emotional wellbeing. Available 24/7.',
+  defaultTitle: 'CoffieCalm - Anonymous Random Chat Online & Mental Wellness Support',
+  defaultDescription: 'CoffieCalm: Free anonymous random chat online for mental wellness. Connect with peer support through random chat, vent anonymously, and find emotional support without phone numbers. Also known as Coffie Calm and Coffee Calm. Perfect for anxiety, stress, and developer burnout. Available 24/7.',
   
   // Social Media
   twitterHandle: '@coffiecalm',
+  twitterUrl: 'https://x.com/coffiecalm',
   facebookUrl: 'https://facebook.com/coffiecalm',
+  instagramUrl: 'https://www.instagram.com/coffiecalm',
+  pinterestUrl: 'https://in.pinterest.com/coffiecalm/',
+  redditUrl: 'https://www.reddit.com/user/coffiecalm/',
   
   // Images
   defaultOgImage: 'https://coffiecalm.com/og-image.png',
@@ -65,6 +69,39 @@ export const LONG_TAIL_KEYWORDS = [
   'mental wellbeing chat without sign up',
 ];
 
+// Brand Variations - All spellings of CoffieCalm
+export const BRAND_VARIATIONS = [
+  'CoffieCalm',
+  'Coffie Calm',
+  'Coffee Calm',
+  'CalmCoffie',
+  'Calm Coffie'
+] as const;
+
+// Random Chat Keywords - Core random chat functionality terms
+export const RANDOM_CHAT_KEYWORDS = [
+  'random chat',
+  'random chat online',
+  'anonymous random chat',
+  'free random chat',
+  'random stranger chat',
+  'random chat app',
+  'random chat website'
+] as const;
+
+// Combined Intent Keywords - Random chat + mental wellness
+export const COMBINED_INTENT_KEYWORDS = [
+  'random chat mental health',
+  'anonymous chat support',
+  'random chat wellness',
+  'calm chat online',
+  'random chat peer support',
+  'anonymous random chat support',
+  'random chat anxiety support',
+  'mental health random chat',
+  'random chat emotional support'
+] as const;
+
 // Meta Keywords
 export const META_KEYWORDS = [
   // Core terms
@@ -115,6 +152,14 @@ export const META_KEYWORDS = [
   'no phone number required',
   'free mental health support',
   '24/7 peer support',
+];
+
+// Enhanced Meta Keywords - Combines all keyword categories
+export const ENHANCED_META_KEYWORDS = [
+  ...BRAND_VARIATIONS,
+  ...RANDOM_CHAT_KEYWORDS,
+  ...COMBINED_INTENT_KEYWORDS,
+  ...META_KEYWORDS
 ];
 
 // Sitemap Configuration

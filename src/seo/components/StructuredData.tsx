@@ -1,6 +1,6 @@
 import { Helmet } from 'react-helmet-async';
 import { StructuredData } from '../types';
-import { SEO_CONFIG } from '../config';
+import { SEO_CONFIG, BRAND_VARIATIONS } from '../config';
 import { faqData } from '../data/faqData';
 
 interface StructuredDataProps {
@@ -27,12 +27,21 @@ export function OrganizationSchema() {
     '@context': 'https://schema.org',
     '@type': 'Organization',
     name: SEO_CONFIG.organizationName,
+    alternateName: [
+      'Coffie Calm',
+      'Coffee Calm',
+      'CalmCoffie',
+      'Calm Coffie'
+    ],
     url: SEO_CONFIG.siteUrl,
     logo: SEO_CONFIG.logo,
-    description: 'CoffieCalm is a mental wellness platform providing anonymous peer-to-peer emotional support for people experiencing anxiety, stress, loneliness, and mental health challenges. We connect empathetic peer listeners with those seeking judgment-free emotional conversations.',
+    description: 'Anonymous random chat online platform for mental wellness and peer support. CoffieCalm provides free random chat connections for emotional support, combining the immediacy of random chat with the safety of a mental health-focused community.',
     sameAs: [
-      SEO_CONFIG.twitterHandle,
+      SEO_CONFIG.twitterUrl,
       SEO_CONFIG.facebookUrl,
+      SEO_CONFIG.instagramUrl,
+      SEO_CONFIG.pinterestUrl,
+      SEO_CONFIG.redditUrl,
     ],
     about: {
       '@type': 'Thing',
@@ -59,6 +68,11 @@ export function OrganizationSchema() {
         '@type': 'Thing',
         name: 'Anxiety Support',
         description: 'Peer support for anxiety and stress management'
+      },
+      {
+        '@type': 'Thing',
+        name: 'Random Chat',
+        description: 'Instant random chat connections for mental wellness support'
       }
     ]
   };
@@ -72,7 +86,9 @@ export function WebSiteSchema() {
     '@context': 'https://schema.org',
     '@type': 'WebSite',
     name: SEO_CONFIG.siteName,
+    alternateName: 'Coffie Calm',
     url: SEO_CONFIG.siteUrl,
+    description: 'Anonymous random chat online platform for mental wellness. Also known as Coffie Calm and Coffee Calm. Connect with peer support through free random chat for emotional support and mental health conversations.',
     potentialAction: {
       '@type': 'SearchAction',
       target: {
@@ -92,19 +108,21 @@ export function WebApplicationSchema() {
     '@context': 'https://schema.org',
     '@type': 'WebApplication',
     name: SEO_CONFIG.siteName,
+    alternateName: 'Coffie Calm',
     url: SEO_CONFIG.siteUrl,
     applicationCategory: 'HealthApplication',
+    keywords: 'random chat, anonymous chat, mental wellness, peer support, random chat online, emotional support, mental health support, anonymous random chat, random chat mental health',
     operatingSystem: 'iOS, Android, Web',
     offers: {
       '@type': 'Offer',
       price: '0',
       priceCurrency: 'USD',
     },
-    description: 'CoffieCalm is a mental wellness platform that provides anonymous peer-to-peer emotional support for anxiety, stress, loneliness, and mental health challenges. Connect with empathetic peer listeners 24/7 for judgment-free conversations without appointments, fees, or social pressure.',
+    description: 'Free anonymous random chat online for mental wellness support. Connect with peer support through instant random chat connections. CoffieCalm provides random chat for emotional support, combining the immediacy of random chat with the safety of a mental health-focused community.',
     about: {
       '@type': 'Thing',
       name: 'Peer Support Platform',
-      description: 'Anonymous emotional support through peer-to-peer conversations'
+      description: 'Anonymous emotional support through peer-to-peer conversations and random chat'
     },
     mentions: [
       {
@@ -118,14 +136,19 @@ export function WebApplicationSchema() {
       {
         '@type': 'Thing',
         name: 'Anonymous Chat'
+      },
+      {
+        '@type': 'Thing',
+        name: 'Random Chat'
       }
     ],
     featureList: [
-      'Anonymous peer-to-peer emotional conversations with complete privacy',
+      'Anonymous random chat online with complete privacy and instant connections',
       '24/7 availability - connect with peer listeners anytime without appointments',
       'Judgment-free support from empathetic listeners who understand mental health challenges',
       'Topic-based Sharing Circles for group peer support on anxiety, stress, and more',
       'One-on-one Quiet Corner conversations for private emotional support',
+      'Random chat feature for immediate mental wellness support',
       'No social media features - no likes, followers, or public profiles',
       'Free to use - accessible emotional support for everyone',
       'Safe, moderated environment focused on mental wellness and peer connection'

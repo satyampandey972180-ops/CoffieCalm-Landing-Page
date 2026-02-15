@@ -7,6 +7,18 @@ export const faqData: FAQ[] = [
     answer: 'Sharing Circles are small, topic-based group chats where you can discuss specific feelings or situations with people who relate. They provide a warm, moderated, and supportive environment for peer-to-peer emotional support. Each circle focuses on a particular theme like anxiety, stress, or daily challenges, allowing you to connect with others experiencing similar situations in a judgment-free space.'
   },
   {
+    question: 'How does the random chat feature work?',
+    answer: 'CoffieCalm\'s random chat online feature connects you instantly with available listeners or peers. When you join, our system randomly matches you with someone who\'s ready to listen. It\'s completely anonymous random chat - no personal information required. You can start a conversation immediately and leave anytime you want. Unlike typical random chat websites, CoffieCalm focuses specifically on mental wellness support, creating a safe space for emotional conversations.'
+  },
+  {
+    question: 'Is CoffieCalm a random chat website?',
+    answer: 'Yes, CoffieCalm includes random chat functionality, but it\'s specifically designed for mental wellness support. Unlike typical random chat websites like Omegle or Chatroulette, CoffieCalm focuses on emotional support, peer connection, and mental health conversations. Our random chat online platform is moderated and safe, creating a judgment-free space for authentic emotional conversations. We combine the immediacy of random chat with the safety and purpose of a mental health-focused community.'
+  },
+  {
+    question: 'Can I search for \'Coffie Calm\' or \'Coffee Calm\'?',
+    answer: 'Yes! CoffieCalm is also known as Coffie Calm and Coffee Calm. All spellings refer to the same mental wellness platform. Whether you search for CoffieCalm, Coffie Calm, Coffee Calm, CalmCoffie, or Calm Coffie, you\'ll find our anonymous random chat and peer support community. We understand people spell our name different ways, and we want to make sure you can always find us.'
+  },
+  {
     question: 'Is CoffieCalm really anonymous?',
     answer: 'Yes, CoffieCalm is completely anonymous. You choose a pseudonym (like "CoffeeLover99") and an avatar without providing your real name, photo, or personal information. Your conversations remain private, and you can share freely without fear of judgment or your identity being revealed. CoffieCalm is designed specifically for anonymous emotional support where your privacy is protected.'
   },

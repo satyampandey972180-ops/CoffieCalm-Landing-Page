@@ -2,6 +2,7 @@ import { motion } from 'motion/react';
 import { MessageCircle, Shield, Clock } from 'lucide-react';
 import { ImageWithFallback } from './figma/ImageWithFallback';
 import safeSpaceImg from '../assets/safe-space-illustration.png';
+import safeSpaceWebp from '../assets/safe-space-illustration.webp';
 
 export function NotAlone() {
   return (
@@ -17,8 +18,11 @@ export function NotAlone() {
           >
             <ImageWithFallback
               src={safeSpaceImg}
+              webpSrc={safeSpaceWebp}
               alt="Anonymous chat with caring listeners - safe space for mental health support"
               className="w-full h-auto max-h-96 object-cover"
+              width={512}
+              height={512}
             />
           </motion.div>
 

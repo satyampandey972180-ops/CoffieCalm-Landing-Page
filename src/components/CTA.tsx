@@ -63,9 +63,11 @@ export function CTA() {
           >
             <div className="relative rounded-3xl overflow-hidden shadow-2xl">
               <ImageWithFallback
-                src="https://images.unsplash.com/photo-1764192114257-ae9ecf97eb6f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjYWxtJTIwbmF0dXJlJTIwbWluZGZ1bG5lc3N8ZW58MXx8fHwxNzY1NDA1NDU4fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
-                alt="Peaceful nature scene"
+                src="https://images.unsplash.com/photo-1764192114257-ae9ecf97eb6f?auto=format&fit=crop&w=800&q=75"
+                alt="Peaceful nature scene - calm mindfulness environment"
                 className="w-full h-auto"
+                width={800}
+                height={533}
               />
             </div>
           </motion.div>

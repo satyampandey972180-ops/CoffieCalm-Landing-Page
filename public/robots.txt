@@ -12,12 +12,36 @@ Sitemap: https://www.coffiecalm.com/sitemap.xml
 # https://llmstxt.org/
 Allow: /llms.txt
 
+# Important pages for crawlers
+Allow: /contact.html
+Allow: /privacy.html
+Allow: /terms.html
+
 # Google bot
 User-agent: Googlebot
 Allow: /
 
 # Bing bot
 User-agent: Bingbot
+Allow: /
+
+# AI Crawlers (ChatGPT, Claude, Perplexity, etc.)
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: PerplexityBot
 Allow: /
 
 # Crawl-delay (optional, in seconds)

@@ -1,7 +1,7 @@
 import { Helmet } from 'react-helmet-async';
 import { MetaTagConfig } from '../types';
 import { validateTitle, validateDescription, sanitizeMetaText } from '../utils';
-import { SEO_CONFIG, META_KEYWORDS } from '../config';
+import { SEO_CONFIG, ENHANCED_META_KEYWORDS } from '../config';
 
 interface SEOHeadProps {
   config?: Partial<MetaTagConfig>;
@@ -13,7 +13,7 @@ export function SEOHead({ config, googleAnalyticsId, googleSearchConsoleVerifica
   // Merge with defaults
   const title = config?.title || SEO_CONFIG.defaultTitle;
   const description = config?.description || SEO_CONFIG.defaultDescription;
-  const keywords = config?.keywords || META_KEYWORDS;
+  const keywords = config?.keywords || ENHANCED_META_KEYWORDS;
   const canonicalUrl = config?.canonicalUrl || SEO_CONFIG.siteUrl;
   const ogImage = config?.ogImage || SEO_CONFIG.defaultOgImage;
   const ogType = config?.ogType || 'website';

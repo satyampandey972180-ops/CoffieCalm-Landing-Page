@@ -1,6 +1,7 @@
 import { motion } from 'motion/react';
 import { ImageWithFallback } from './figma/ImageWithFallback';
 import empathyImg from '../assets/empathy-illustration.jpg';
+import empathyWebp from '../assets/empathy-illustration.webp';
 
 export function UnderstandingCare() {
   return (
@@ -42,8 +43,11 @@ export function UnderstandingCare() {
           >
             <ImageWithFallback
               src={empathyImg}
+              webpSrc={empathyWebp}
               alt="Real empathy from real people - compassionate peer support and understanding care"
               className="w-full h-auto max-h-96 object-cover"
+              width={1024}
+              height={964}
             />
           </motion.div>
         </div>

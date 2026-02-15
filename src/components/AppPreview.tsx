@@ -64,9 +64,11 @@ export function AppPreview() {
           >
             <div className="relative rounded-3xl overflow-hidden shadow-2xl">
               <ImageWithFallback
-                src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb2JpbGUlMjBhcHAlMjBkZXNpZ258ZW58MXx8fHwxNzY1NDM4MDA2fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
-                alt="Mobile app interface"
+                src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?auto=format&fit=crop&w=800&q=75"
+                alt="Mobile app interface - CoffieCalm mental wellness app"
                 className="w-full h-auto"
+                width={800}
+                height={533}
               />
               <div className="absolute inset-0 bg-gradient-to-t from-purple-900/30 to-transparent"></div>
             </div>

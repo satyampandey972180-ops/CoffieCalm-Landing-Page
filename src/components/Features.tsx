@@ -11,9 +11,9 @@ const features = [
   },
   {
     icon: MessageCircle,
-    title: 'Sharing Circles',
-    description: 'Join small, intimate group chats centered around specific topics or feelings.',
-    benefit: 'Helps you feel less alone by connecting with others experiencing similar mental health challenges.',
+    title: 'Random Chat & Sharing Circles',
+    description: 'Join random chat connections or themed sharing circles for peer support. Our anonymous random chat online feature instantly matches you with empathetic listeners, while sharing circles provide ongoing community support for specific topics like anxiety, stress, or developer burnout.',
+    benefit: 'Choose between instant random chat for immediate support or join circles for ongoing peer connections. Get immediate mental wellness support through random chat without appointments or waiting.',
     color: 'from-sky-500 to-sky-600'
   },
   {

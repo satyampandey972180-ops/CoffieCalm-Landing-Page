@@ -86,8 +86,8 @@ export function PrivacyPolicy() {
               <h2 className="text-2xl text-gray-900 mb-4">Contact Us</h2>
               <p className="text-gray-600 leading-relaxed">
                 If you have any questions about this Privacy Policy, please contact us at:{' '}
-                <a href="mailto:privacy@coffiecalm.com" className="text-purple-600 hover:text-purple-700">
-                  privacy@coffiecalm.com
+                <a href="mailto:support@coffiecalm.com" className="text-purple-600 hover:text-purple-700">
+                  support@coffiecalm.com
                 </a>
               </p>
             </section>

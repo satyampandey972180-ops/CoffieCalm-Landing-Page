@@ -1,6 +1,7 @@
 import { motion } from 'motion/react';
 import { ImageWithFallback } from './figma/ImageWithFallback';
 import quietCornerImg from '../assets/quiet-corner-illustration.jpg';
+import quietCornerWebp from '../assets/quiet-corner-illustration.webp';
 
 export function VirtualSessions() {
   return (
@@ -16,8 +17,11 @@ export function VirtualSessions() {
           >
             <ImageWithFallback
               src={quietCornerImg}
+              webpSrc={quietCornerWebp}
               alt="People having meaningful conversation in quiet corner - peer support and emotional wellness"
               className="w-full h-auto max-h-96 object-cover"
+              width={1024}
+              height={932}
             />
           </motion.div>
 

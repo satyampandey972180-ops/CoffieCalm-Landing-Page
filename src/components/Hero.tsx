@@ -28,11 +28,11 @@ export function Hero() {
             </div>
 
             <h1 className="text-5xl lg:text-6xl mb-6 bg-gradient-to-r from-purple-600 to-sky-600 bg-clip-text text-transparent">
-              Anonymous Peer Support & Mental Wellness Platform
+              CoffieCalm - Anonymous Random Chat Online & Mental Wellness Support
             </h1>
 
             <p className="text-xl text-gray-600 mb-4 leading-relaxed">
-              <strong>CoffieCalm is a mental wellness platform that provides anonymous peer-to-peer emotional support for people experiencing anxiety, stress, and mental health challenges.</strong>
+              <strong>Connect instantly with empathetic listeners through random chat. CoffieCalm provides free anonymous random chat for mental wellness, emotional support, and peer connection. No phone number required. Available 24/7.</strong>
             </p>
 
             {/* Read More Section */}
@@ -52,14 +52,14 @@ export function Hero() {
                   exit={{ opacity: 0, height: 0 }}
                   className="text-lg text-gray-600 mt-4 leading-relaxed"
                 >
-                  Unlike traditional therapy, CoffieCalm offers judgment-free conversations with empathetic peer listeners who understand what you're going through. It's used for anonymous emotional conversations without appointments, social pressure, or clinical records—an accessible alternative to therapy for immediate support and ongoing mental wellness.
+                  Unlike typical random chat websites, CoffieCalm combines the immediacy of random chat online with the safety of a mental health-focused community. Get judgment-free conversations with empathetic peer listeners who understand anxiety, stress, developer burnout, and mental health challenges—without appointments, social pressure, or clinical records.
                 </motion.p>
               )}
               
               {/* Hidden content for SEO when collapsed */}
               {!showReadMore && (
                 <div className="hidden">
-                  Unlike traditional therapy, CoffieCalm offers judgment-free conversations with empathetic peer listeners who understand what you're going through. It's used for anonymous emotional conversations without appointments, social pressure, or clinical records—an accessible alternative to therapy for immediate support and ongoing mental wellness.
+                  Unlike typical random chat websites, CoffieCalm combines the immediacy of random chat online with the safety of a mental health-focused community. Get judgment-free conversations with empathetic peer listeners who understand anxiety, stress, developer burnout, and mental health challenges—without appointments, social pressure, or clinical records.
                 </div>
               )}
             </div>
@@ -147,12 +147,12 @@ export function Hero() {
           >
             <div className="relative rounded-3xl overflow-hidden shadow-2xl">
               <ImageWithFallback
-                src="https://images.unsplash.com/photo-1722094250550-4993fa28a51b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwZWFjZWZ1bCUyMG1lZGl0YXRpb24lMjB3ZWxsbmVzc3xlbnwxfHx8fDE3NjUzMjcwOTR8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
+                src="https://images.unsplash.com/photo-1722094250550-4993fa28a51b?auto=format&fit=crop&w=800&q=75"
                 alt="Person meditating peacefully in calm environment - mental wellness and mindfulness"
                 className="w-full h-auto max-h-96 object-cover"
                 lazy={false}
-                width={1080}
-                height={720}
+                width={800}
+                height={533}
               />
               <div className="absolute inset-0 bg-gradient-to-t from-purple-900/20 to-transparent"></div>
             </div>

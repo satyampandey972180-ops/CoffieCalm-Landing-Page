@@ -1,6 +1,7 @@
 import { motion } from 'motion/react';
 import { ImageWithFallback } from './figma/ImageWithFallback';
 import sharingCirclesImg from '../assets/sharing-circles-illustration.jpg';
+import sharingCirclesWebp from '../assets/sharing-circles-illustration.webp';
 
 export function TherapyCommunity() {
   return (
@@ -42,8 +43,11 @@ export function TherapyCommunity() {
           >
             <ImageWithFallback
               src={sharingCirclesImg}
+              webpSrc={sharingCirclesWebp}
               alt="Sharing circles - small groups providing big support in mental wellness community"
               className="w-full h-auto max-h-96 object-cover"
+              width={1024}
+              height={813}
             />
           </motion.div>
         </div>
